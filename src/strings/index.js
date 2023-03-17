@@ -1,20 +1,20 @@
 const split = (str, delim) => {
-  // write code for strings.split
-
-}
+  let newString = str.split(delim);
+  return newString;
+};
 
 const pairs = (str) => {
-  // write code for strings.pairs
-
-}
+  let pairedString = str.match(/.{2}/g);
+  return pairedString;
+};
 
 const reverse = (str) => {
-  // write code for strings.reverse
-
-}
+  let reversedString = str.split("").reverse().join("");
+  return reversedString;
+};
 
 module.exports = {
   split,
   pairs,
-  reverse
-}
+  reverse,
+};

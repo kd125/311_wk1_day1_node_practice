@@ -4,21 +4,24 @@ const isEven = (num) => {
   }
 };
 
-let myArray = [4, 2, 2, 9, 1];
-
 const sum = (arr) => {
-  let sumNumbers;
+  let sumNumbers = 0;
   for (let i = 0; i < arr.length; i++) {
-    sumNumbers + arr[i];
-    console.log("Current value is: " + arr[i]);
+    sumNumbers += arr[i];
   }
-  console.log(sumNumbers);
+  return sumNumbers;
 };
 
-sum(myArray);
-
 const comboSum = (arr, sum) => {
-  // write code for numbers.comboSum
+  let arrayTotal = 0;
+  for (let i = 0; i < arr.length; i++) {
+    arrayTotal += arr[i];
+  }
+  if (arrayTotal == sum) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = {
